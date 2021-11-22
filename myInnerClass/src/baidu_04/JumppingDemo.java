@@ -10,5 +10,11 @@ public class JumppingDemo {
             }
         };
         jumppingOperator.method(jumpping);
+        jumppingOperator.method(new Jumpping() {
+            @Override
+            public void jump() {
+                System.out.println("跳高！！");
+            }
+        });
     }
 }
